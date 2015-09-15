@@ -14,10 +14,10 @@ module.exports = class SpriteBrunch
   constructor: (@config) ->
     @options = _.extend
       path: 'app/assets/images/sprites'
-      destCSS: 'app/sass/_sprites.sass'
+      destCSS: 'app/styles/socialcast/_sprites.scss'
       algorithm: 'top-down'
-      cssFormat: 'sass'
-      engine: 'canvas'
+      cssFormat: 'scss'
+      engine: 'gm'
       imgOpts:
         format: 'auto'
         quality: 90
@@ -64,7 +64,7 @@ module.exports = class SpriteBrunch
             formatOpts =
               sprites: true
               spriteImage: sprite.foldername
-              spritePath: '../' + @options.path + '/' + sprite.imageFile
+              spritePath: '/images/sprites/' + sprite.imageFile
 
             styles += json2css(sprite.coordinates, { format: @options.cssFormat, formatOpts: formatOpts})
           dummy_data = [{'name': 'github', 'x': 0, 'y': 0, 'width': 10, 'height': 20, 'total_width': 80, 'total_height': 100, 'image': 'spritesheet.png'}]
