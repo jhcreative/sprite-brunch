@@ -1,6 +1,6 @@
 {
   "name": "sprite-brunch-localvox",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Language agnostic sprite generator for brunch, customized for app.localvox",
   "author": "John Hiemstra modifying work by Steffen Müller",
   "homepage": "https://github.com/jhcreative/sprite-brunch",
