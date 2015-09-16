@@ -14,7 +14,7 @@
     "test": "mocha --compilers coffee:coffee-script --require test/common.js"
   },
   "dependencies": {
-    "spritesmith": "~1.4.0",
+    "spritesmith": "~0.3.11",
     "json2css": "~3.2.0",
     "underscore": "~1.5.1",
     "when": "~2.3.0"
